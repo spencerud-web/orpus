@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact - Orpus</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="headers.js"></script>
+  <style>
+    body {
+      padding: 1.5rem;
+    }
+
+    .contact-container {
+      max-width: 1000px;
+      margin: 2rem auto 0;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 2rem;
+      align-items: start;
+      animation: fadeIn 1s ease 0.3s forwards;
+      opacity: 0;
+    }
+
+    .contact-card,
+    .contact-form {
+      background: white;
+      border: 2px solid #05ABE8;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .contact-card h3,
+    .contact-form h3 {
+      margin-top: 0;
+      color: #05ABE8;
+      font-size: 1.3rem;
+    }
+
+    .contact-card p,
+    .contact-form label {
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.8rem;
+      border: 1px solid #cfeef9;
+      border-radius: 6px;
+      font-family: Inter, sans-serif;
+      font-size: 0.95rem;
+    }
+
+    .contact-form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .contact-form button {
+      align-self: flex-start;
+      padding: 0.7rem 1.2rem;
+      background-color: #05ABE8;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.2s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #0077cc;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="contact-container">
+    <div class="contact-card">
+      <h3>Get in Touch</h3>
+      <p>We’d love to hear from you.</p>
+      <p><strong>Email:</strong> contact@orpus.com</p>
+      <p><strong>Location:</strong> Ithaca, NY</p>
+      <p>Whether you want to learn more about Orpus, ask a question, or explore collaboration opportunities, reach out anytime.</p>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send a Message</h3>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Your name" />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Your email" />
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Tell us what you’re interested in"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
