@@ -40,6 +40,54 @@
       margin-bottom: 0.7rem;
     }
 
+    .about-hero {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #1f2d3d;
+      margin-bottom: 1rem;
+    }
+
+    .how-it-works-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .how-step {
+      background: #f7fbfe;
+      border: 1px solid #cfeef9;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 1px 4px rgba(5, 171, 232, 0.06);
+    }
+
+    .how-step .step-number {
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+      text-align: center;
+      border-radius: 999px;
+      background: #05ABE8;
+      color: white;
+      font-weight: 700;
+      margin-bottom: 0.7rem;
+    }
+
+    .how-step h4 {
+      margin: 0 0 0.4rem;
+      color: #05ABE8;
+      font-size: 1rem;
+    }
+
+    .how-step p {
+      margin: 0;
+      color: #555;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
     .about-highlights {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -61,7 +109,8 @@
     }
 
     @media (max-width: 768px) {
-      .about-highlights {
+      .about-highlights,
+      .how-it-works-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -76,6 +125,28 @@
         materials and more time making progress.</p>
       <p>Our platform is designed to make inventory management simpler, 
         faster, and more reliable for busy scientific teams.</p>
+    </div>
+
+    <div class="about-card">
+      <h3>How It Works</h3>
+      <p class="about-hero">Tracking that runs itself. Orpus infers reagent usage from the protocols your team is already running — so nobody has to learn a new habit.</p>
+      <div class="how-it-works-grid">
+        <div class="how-step">
+          <div class="step-number">1</div>
+          <h4>Define your protocols</h4>
+          <p>Write or import your experiments and tag each step with reagents and volumes — just once. Orpus version-controls every change automatically.</p>
+        </div>
+        <div class="how-step">
+          <div class="step-number">2</div>
+          <h4>Log a protocol run</h4>
+          <p>Mark a protocol as run and Orpus records the reagents it used automatically — every quantity decremented, with no separate logging step.</p>
+        </div>
+        <div class="how-step">
+          <div class="step-number">3</div>
+          <h4>Get explainable alerts</h4>
+          <p>Smart alerts tell you what to reorder and when, with a clear paper trail: run 12× at 200µL, you have about 40% of your Trypsin left.</p>
+        </div>
+      </div>
     </div>
 
     <div class="about-card">
