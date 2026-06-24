@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>About - Orpus</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="headers.js"></script>
+  <style>
+    body {
+      padding: 1.5rem;
+    }
+
+    .about-container {
+      max-width: 1000px;
+      margin: 2rem auto 0;
+      display: grid;
+      gap: 1.5rem;
+      animation: fadeIn 1s ease 0.3s forwards;
+      opacity: 0;
+    }
+
+    .about-card {
+      background: white;
+      border: 2px solid #05ABE8;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .about-card h3 {
+      margin-top: 0;
+      color: #05ABE8;
+      font-size: 1.3rem;
+    }
+
+    .about-card p {
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 0.7rem;
+    }
+
+    .about-highlights {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .highlight {
+      padding: 1rem;
+      background: #f7fbfe;
+      border-radius: 8px;
+      border-left: 4px solid #05ABE8;
+    }
+
+    .highlight strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: #05ABE8;
+    }
+
+    @media (max-width: 768px) {
+      .about-highlights {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="about-container">
+    <div class="about-card">
+      <h3>About Orpus</h3>
+      <p>Orpus is building a smarter way to track lab 
+        supplies and resources, helping researchers spend less time organizing 
+        materials and more time making progress.</p>
+      <p>Our platform is designed to make inventory management simpler, 
+        faster, and more reliable for busy scientific teams.</p>
+    </div>
+
+    <div class="about-card">
+      <h3>What We Focus On</h3>
+      <div class="about-highlights">
+        <div class="highlight">
+          <strong>Clarity</strong>
+          <span>Keep track of what your lab has, where it is, and when it needs attention.</span>
+        </div>
+        <div class="highlight">
+          <strong>Efficiency</strong>
+          <span>Reduce wasted time and eliminate avoidable supply shortages.</span>
+        </div>
+        <div class="highlight">
+          <strong>Reliability</strong>
+          <span>Create a dependable system for teams that need consistency and accuracy.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
