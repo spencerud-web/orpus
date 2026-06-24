@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Orpus</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="headers.js"></script>
+  <style>
+
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    #two {
+      animation: fadeIn 1s ease 0.3s forwards;
+      opacity: 0;
+      margin-top: 2rem;
+    }
+
+    #one {
+      animation: fadeIn 1s ease 0.5s forwards;
+      opacity: 0;
+      margin-top: 1rem;
+    }
+
+    #one p {
+      margin-top: -1rem;
+    }
+
+    #three {
+      animation: fadeIn 1s ease 0.7s forwards;
+      opacity: 0;
+      margin-top: 1rem;
+    }
+
+    .tablink {
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .tablink:hover {
+      background-color: #005fa3;
+      transform: translateY(-2px);
+    }
+
+    .tablink:active {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <section id="two">
+    <h4>The Problem Thousands of Labs are Facing</h4>
+  </section>
+
+  <section id="one">
+    <h3>What Is Orpus?</h3>
+    <p>Orpus is a lab supply tracking software that allows users to
+      focus on their research rather than their resource organization.</p>
+  </section>
+
+  <section id="three">
+    <h5>Join the Waitlist</h5>
+  </section>
+</body>
+</html>

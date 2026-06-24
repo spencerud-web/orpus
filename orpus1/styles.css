@@ -1,0 +1,57 @@
+body {
+  font-family: Inter, Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 1rem;
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 250;
+  letter-spacing: 0.3rem;
+  color: #05ABE8;
+  margin-top: 0;
+  animation: fadeDown 0.8s ease forwards;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-top: -3rem;
+  animation: fadeDown 0.8s ease 0.2s forwards;
+  border-bottom: 2.8px solid #05ABE8;
+  opacity: 0;
+}
+
+nav {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tablink {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: #05ABE8;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.tablink:hover {
+  background-color: #0077cc;
+  transform: translateY(-2px);
+}
+
+.tablink:active { transform: translateY(0); }
